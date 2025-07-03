@@ -43,4 +43,26 @@ function createRevenueChart() {
     })
 }
 
+function createTrafficPieChart() {
+    const pieChartNode = document.getElementById('traffic-chart');
+
+    new Chart(pieChartNode, {
+        type: 'pie',
+        data: {
+            labels: ['Social', 'Direct', 'Referral', 'Other'],
+            datasets: [{
+                label: 'Traffic Sources',
+                data: [35, 25, 20, 20],
+                backgroundColor: [
+                    'rgb(238, 235, 18)',
+                    'rgb(72, 61, 194)',
+                    'rgb(161, 7, 7)',
+                    'rgb(30, 227, 165)', 
+                ]
+            }]
+        }
+    })
+}
+
 createRevenueChart();
+createTrafficPieChart();
