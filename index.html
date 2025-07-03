@@ -121,7 +121,7 @@
     <!-- Container for user details, sits below the graphics container -->
     <div class="user-data-container">
         <section class="summary recent-activity">
-            <p><strong>Recent Activity</strong></p>
+            <h3>Recent Activity</h3>
             <button type="button">View All</button>
             <ol>
                 <li>
@@ -146,7 +146,21 @@
                 </li>
             </ol>
         </section>
-        <section class="summary user-management"></section>
+        <section class="summary user-management">
+            <h3>User Management</h3>
+            <input type="search" placeholder="Search users...">
+            <table>
+                <tr>
+                    <th>User</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Last Active</th>
+                    <th>Action</th>
+                </tr>
+                tr*3>td*6
+            </table>
+        </section>
     </div>
 </body>
 </html>
