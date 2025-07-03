@@ -60,7 +60,39 @@ function createTrafficPieChart() {
                     'rgb(30, 227, 165)', 
                 ]
             }]
-        }
+        },
+        // This is where we configure the chart behavior
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                // Configure the datalabels plugin
+                datalabels: {
+                    // This formatter function determines what text appears on each slice
+                    formatter: function(value, context) {
+                        // Calculate percentage
+                        const total = context.dataset.data.reduce((sum, val) => sum + val, 0);
+                        const percentage = ((value / total) * 100).toFixed(1);
+                        return percentage + '%';
+                    },
+                    // Styling the labels
+                    color: 'white',
+                    font: {
+                        weight: 'bold',
+                        size: 16
+                    },
+                    // Position the labels in the center of each slice
+                    anchor: 'center',
+                    align: 'center'
+                },
+                // Keep the legend visible
+                legend: {
+                    position: 'top',
+                }
+            }
+        },
+        // Register the datalabels plugin
+        plugins: [ChartDataLabels]
     })
 }
 
