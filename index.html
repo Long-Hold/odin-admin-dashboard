@@ -150,15 +150,41 @@
             <h3>User Management</h3>
             <input type="search" placeholder="Search users...">
             <table>
-                <tr>
-                    <th>User</th>
-                    <th>Email</th>
-                    <th>Role</th>
-                    <th>Status</th>
-                    <th>Last Active</th>
-                    <th>Action</th>
-                </tr>
-                tr*3>td*6
+                <thead>
+                    <tr>
+                        <th scope="col">User</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Last Active</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+<td>John Doe</td>
+                        <td>john.doe@example.com</td>
+                        <td>Administrator</td>
+                        <td><span class="status active">Active</span></td>
+                        <td>2 minutes ago</td>
+                        <td><button type="button">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>jane.smith@example.com</td>
+                        <td>Editor</td>
+                        <td><span class="status active">Active</span></td>
+                        <td>1 hour ago</td>
+                        <td><button type="button">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>Bob Johnson</td>
+                        <td>bob.johnson@example.com</td>
+                        <td>Viewer</td>
+                        <td><span class="status inactive">Inactive</span></td>
+                        <td>3 days ago</td>
+                        <td><button type="button">Edit</button></td>
+                    </tr>
+                </tbody>
             </table>
         </section>
     </div>
