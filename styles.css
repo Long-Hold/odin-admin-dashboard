@@ -1,0 +1,13 @@
+/* Reset and normalization code */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+
+    /* Container visisiblity */
+    border: 1px solid red;
+}
