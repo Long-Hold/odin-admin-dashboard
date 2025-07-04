@@ -75,3 +75,11 @@ header {
 .users .data-container {
     grid-area: users;
 }
+
+/* Container layout styling */
+
+.sidebar {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
