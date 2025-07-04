@@ -48,3 +48,30 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+
+/* body grid layout */
+body {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 4fr;
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar numbers"
+        "sidebar users";
+}
+
+header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.number .data-container {
+    grid-area: numbers;
+}
+
+.users .data-container {
+    grid-area: users;
+}
