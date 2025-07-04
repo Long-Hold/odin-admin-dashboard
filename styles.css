@@ -5,9 +5,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
-    line-height: 1.5;
 
     /* Container visisiblity */
     border: 1px solid red;
+}
+
+:root {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+html {
+    background-color: black;
+    color: white;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+div {
+    background-color: rgb(30, 29, 29);
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
