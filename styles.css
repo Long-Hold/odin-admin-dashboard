@@ -88,16 +88,11 @@ header {
     text-align: center;
 }
 
-.sidebar ul {
+.sidebar nav ul {
     display: flex;
     flex-flow: column nowrap;
     gap: 15px;
     align-items:flex-start;
     justify-self: center;
-    width: 50%;
-}
-
-.nav.page .icon::after{
-    content: "Hello";
-    
+    min-width: 75%;
 }
