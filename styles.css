@@ -13,6 +13,8 @@
 :root {
     font-size: 16px;
     line-height: 1.6;
+
+    --container-color: rgb(30, 29, 29);
 }
 
 html {
@@ -39,8 +41,9 @@ a {
     text-decoration: none;
 }
 
-div {
-    background-color: rgb(30, 29, 29);
+div,
+aside {
+    background-color: var(--container-color);
 }
 
 button {
@@ -82,11 +85,14 @@ header {
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
+    text-align: center;
+}
 
-    > * {
-        display: flex;
-        flex-flow: column wrap;
-        gap: 15px;
-        text-align: center;
-    }
+.sidebar ul {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+    align-items:flex-start;
+    justify-self: center;
+    width: 50%;
 }
