@@ -17,6 +17,7 @@
     --container-color: rgb(30, 29, 29);
     --border-color: rgb(102, 102, 102);
     --border-settings: 2px solid var(--border-color);
+    --hover-color: rgb(14, 101, 232);
 }
 
 html {
@@ -84,6 +85,7 @@ header {
 
 /* Container layout styling */
 
+/* ----Side bar styling---- */
 .sidebar {
     display: flex;
     flex-flow: column nowrap;
@@ -103,6 +105,7 @@ header {
     }
 }
 
+/* Pseudoclass icons and hover effects */
 .icon {
     width: 1.2em;
     height: 1.2em;
@@ -148,3 +151,25 @@ header {
         mask-size: contain;
     }
 }
+
+/* Transition time when unfocused */
+li, .icon, a{
+    transition: 0.2s;
+}
+
+/* Creates a visual line beside the selected element */
+.sidebar li:hover {
+    border-left: 2px solid var(--hover-color);
+    background-color: rgb(48, 47, 47);
+    transition: 0.2s;
+    padding-left: 10px;
+
+    >.icon {
+        background-color: var(--hover-color);
+    }
+    >a {
+        color: var(--hover-color);
+    }
+}
+
+/* -----End of Sidebar styling----- */
