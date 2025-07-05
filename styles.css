@@ -7,7 +7,7 @@
     box-sizing: border-box;
 
     /* Container visisiblity */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 :root {
@@ -84,7 +84,7 @@ header {
 .sidebar {
     display: flex;
     flex-flow: column nowrap;
-    gap: 20px;
+    gap: 50px;
     text-align: center;
 }
 
@@ -95,4 +95,20 @@ header {
     align-items:flex-start;
     justify-self: center;
     min-width: 75%;
+
+    & li {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+.icon {
+    width: 1.2em;
+    height: 1.2em;
+    background-color: white;
+    &.dashboard {
+        mask: url(./svgs/icons/dashboard-icon.svg) no-repeat center;
+        mask-size: contain;
+    }
 }
