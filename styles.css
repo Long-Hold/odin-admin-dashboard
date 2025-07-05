@@ -57,7 +57,7 @@ button {
 /* body grid layout */
 body {
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) 4fr;
+    grid-template-columns: 200px 4fr;
     grid-template-rows: min(1fr, 80px) 4fr 4fr;
     grid-template-areas: 
         "sidebar header"
@@ -88,7 +88,7 @@ header {
     display: flex;
     flex-flow: column nowrap;
     gap: 50px;
-    text-align: center;
+    padding-left: 25px;
     border-right: var(--border-settings);
 }
 
@@ -96,10 +96,6 @@ header {
     display: flex;
     flex-flow: column nowrap;
     gap: 15px;
-    align-items:flex-start;
-    justify-self: center;
-    min-width: 75%;
-
     & li {
         display: flex;
         gap: 10px;
