@@ -96,3 +96,8 @@ header {
     justify-self: center;
     width: 50%;
 }
+
+.nav.page .icon::after{
+    content: "Hello";
+    
+}
