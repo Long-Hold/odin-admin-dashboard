@@ -66,6 +66,7 @@ body {
 
 header {
     grid-area: header;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .sidebar {
