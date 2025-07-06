@@ -202,6 +202,7 @@ header {
     justify-content: space-between;
 }
 
+/* Make the nav container grid for easy button placement and sizing */
 header nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -209,8 +210,15 @@ header nav {
     align-items: center;
     gap: 10px;
 
+    /* The buttons will turn lighter and slightly grow when selected */
     > button {
         background-color: rgb(102, 0, 255);
         color: white;
+        transition: 0.2s;
+    }
+
+    > button:hover, button:focus {
+        background-color: rgb(147, 84, 240);
+        transform: scale(1.1);
     }
 }
