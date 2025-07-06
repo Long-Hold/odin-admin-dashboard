@@ -188,3 +188,10 @@ li, .icon, a{
 }
 
 /* -----End of Sidebar styling----- */
+
+/* ---- Header styling and positioning ---- */
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
