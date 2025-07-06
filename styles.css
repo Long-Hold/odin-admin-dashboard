@@ -90,12 +90,22 @@ header {
 
 /* Container layout styling */
 
-/* ----Side bar styling---- */
+/* ----Side bar and logo styling---- */
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .sidebar {
     display: flex;
     flex-flow: column nowrap;
     gap: 50px;
+
     padding-left: 25px;
+    padding-top: 25px;
+
     border-right: var(--border-settings);
 }
 
