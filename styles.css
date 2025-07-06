@@ -55,6 +55,7 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    border: none;
 }
 
 /* body grid layout */
@@ -199,4 +200,18 @@ header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    > button {
+        height: calc(1em + 30px);
+        background-color: rgb(102, 0, 255);
+        color: white;
+    }
 }
