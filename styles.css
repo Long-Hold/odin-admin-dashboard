@@ -18,6 +18,8 @@
     --border-color: rgb(102, 102, 102);
     --border-settings: 2px solid var(--border-color);
     --hover-color: rgb(14, 101, 232);
+
+    --universal-padding: 25px;
 }
 
 html {
@@ -64,6 +66,9 @@ body {
         "logo header"
         "sidebar numbers"
         "sidebar users";
+    > * {
+        padding: var(--universal-padding);
+    }
 }
 
 header {
