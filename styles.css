@@ -210,7 +210,6 @@ header nav {
     gap: 10px;
 
     > button {
-        height: calc(1em + 30px);
         background-color: rgb(102, 0, 255);
         color: white;
     }
