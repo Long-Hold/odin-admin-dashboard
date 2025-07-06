@@ -61,7 +61,7 @@ body {
     grid-template-columns: 200px 4fr;
     grid-template-rows: min(1fr, 80px) 4fr 4fr;
     grid-template-areas: 
-        "sidebar header"
+        "logo header"
         "sidebar numbers"
         "sidebar users";
 }
@@ -71,6 +71,11 @@ header {
     border-bottom: var(--border-settings);
 }
 
+.logo-container {
+    grid-area: logo;
+    border-bottom: var(--border-settings);
+    border-right: var(--border-settings);
+}
 .sidebar {
     grid-area: sidebar;
 }
