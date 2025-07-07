@@ -308,9 +308,21 @@ header nav {
             mask-size: contain;
             background-color: white; /* White icon */
         }
-        
+
         &.total-users::before {
             mask: url(./svgs/icons/user-icon.svg) no-repeat center;
+        }
+
+        &.revenue::before {
+            mask: url(./svgs/icons/revenue.svg) no-repeat center;
+        }
+
+        &.active-projects::before {
+            mask: url(./svgs/icons/projects-icon.svg) no-repeat center;
+        }
+
+        &.conversion-rates::before {
+            mask: url(./svgs/icons/conversion-rates.svg) no-repeat center;
         }
     }
 }
