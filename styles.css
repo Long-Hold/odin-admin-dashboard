@@ -289,6 +289,22 @@ header nav {
         }
     }
 }
+
+/* Pseudoclass styling */
+.number .summary.numeric {
+
+    > div .icon {
+        width: min(2rem, 40px);
+        height: min(2rem, 40px);
+    }
+
+    > div:first-child {
+        & .icon.total-users {
+            mask: url(./svgs/icons/user-icon.svg) no-repeat center;
+            mask-size: contain;
+        }
+    }
+}
 /* End of numeric container styling */
 
 .number .summary.graphics {
