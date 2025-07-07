@@ -232,6 +232,7 @@ header nav {
     background-color: black;
 }
 
+/* Numeric container styling */
 .number.data-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 0.5fr 2fr;
@@ -247,6 +248,7 @@ header nav {
     }
 }
 
+/* Nested CSS for this container */
 .number .summary.numeric {
     grid-area: numeric;
     gap: 20px;
@@ -265,9 +267,29 @@ header nav {
         grid-template-areas: 
         "header icon"
         "value value"
-        "arrow text";
+        "text text";
+
+        /* Data cell positionings and basic styling */
+        > p:first-child {
+            grid-area: header;
+            color: rgb(182, 182, 182);
+        }
+
+        > span:first-of-type {
+            grid-area: icon;
+        }
+
+        > p.numeric-value {
+            grid-area: value;
+            font-size: 2rem;
+        }
+
+        > p.percentage-tracker {
+            grid-area: text;
+        }
     }
 }
+/* End of numeric container styling */
 
 .number .summary.graphics {
     grid-area: chart;
