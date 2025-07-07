@@ -325,6 +325,31 @@ header nav {
             mask: url(./svgs/icons/conversion-rates.svg) no-repeat center;
         }
     }
+
+    & > div .percentage-tracker > span { 
+        width: 16px;  /* Give it explicit dimensions */
+        height: 16px;
+        display: inline-block; /* So it can accept width/height */
+        mask-size: contain;
+
+        &.up-arrow {
+            mask: url(./svgs/icons/up-arrow.svg) no-repeat center;
+            background-color: green;
+        }
+
+        &.down-arrow {
+            mask: url(./svgs/icons/down-arrow.svg) no-repeat center;
+            background-color: red;
+        }
+    }
+}
+
+p:has(span.up-arrow) {
+    color: green;
+}
+
+p:has(span.down-arrow) {
+    color: red;
 }
 /* End of numeric container styling */
 
