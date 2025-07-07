@@ -222,3 +222,49 @@ header nav {
         transform: scale(1.1);
     }
 }
+
+/* ----- End of header styling ----- */
+
+/* ---- Data container styling ---- */
+.data-container {
+    border-radius: 20px;
+    display: grid;
+    background-color: black;
+}
+
+.number.data-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 2fr;
+    gap: 20px;
+    grid-template-areas: 
+    "numeric numeric numeric numeric"
+    "chart chart chart chart";
+
+    & div {
+        border-radius: 20px;
+        border: 2px solid rgb(46, 46, 46);
+        padding: 20px;
+    }
+}
+
+.number .summary.numeric {
+    grid-area: numeric;
+    gap: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    > div {
+        border-radius: 20px;
+        border: 2px solid rgb(46, 46, 46);
+        padding: 20px;
+    }
+}
+
+.number .summary.graphics {
+    grid-area: chart;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
