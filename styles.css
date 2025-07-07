@@ -326,6 +326,7 @@ header nav {
         }
     }
 
+    /* Place the red and green arrows */
     & > div .percentage-tracker > span { 
         width: 16px;  /* Give it explicit dimensions */
         height: 16px;
