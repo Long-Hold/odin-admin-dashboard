@@ -251,19 +251,12 @@ header nav {
 /* Nested CSS for this container */
 .number .summary.numeric {
     grid-area: numeric;
-
-    display: flex;
-    justify-content: space-evenly;
     gap: 20px;
-    flex-flow: row wrap;
-    /* gap: 20px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
     > div {
-        flex: 1 1 auto;
-
         border-radius: 20px;
         border: 2px solid rgb(46, 46, 46);
         padding: 20px;
