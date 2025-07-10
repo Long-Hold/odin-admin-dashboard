@@ -391,6 +391,26 @@ p:has(span.down-arrow) {
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
+
+    & .summary {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "header interact-element"
+            "data data";
+    }
+
+    & .summary > :first-child {
+        grid-area: header;
+    }
+
+    & .summary > :nth-child(2) {
+        grid-area: interact-element;
+    }
+
+    &.summary > :last-child {
+        grid-area: data;
+    }
 }
 
 /* Visual styling */
