@@ -414,6 +414,12 @@ p:has(span.down-arrow) {
     & button, & input {
         justify-self: end;
     }
+
+    & ol {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 10px;
+    }
 }
 
 /* Visual styling */
