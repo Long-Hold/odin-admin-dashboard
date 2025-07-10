@@ -387,6 +387,11 @@ p:has(span.down-arrow) {
 /* ---- User data summary container styling ---- */
 
 /* Positional styling */
+.user.data-container {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
 
 /* Visual styling */
 .user.data-container section {
