@@ -61,6 +61,17 @@ button {
     border: none;
 }
 
+button {
+    background-color: rgb(102, 0, 255);
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover, button:focus {
+    background-color: rgb(147, 84, 240);
+    transform: scale(1.1);
+}
+
 /* body grid layout */
 body {
     display: grid;
@@ -212,18 +223,6 @@ header nav {
     justify-content: center;
     align-items: center;
     gap: 10px;
-
-    /* The buttons will turn lighter and slightly grow when selected */
-    > button {
-        background-color: rgb(102, 0, 255);
-        color: white;
-        transition: 0.2s;
-    }
-
-    > button:hover, button:focus {
-        background-color: rgb(147, 84, 240);
-        transform: scale(1.1);
-    }
 }
 
 /* ----- End of header styling ----- */
