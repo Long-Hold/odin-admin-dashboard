@@ -411,6 +411,10 @@ p:has(span.down-arrow) {
     &.summary > :last-child {
         grid-area: data;
     }
+
+    & button, & input {
+        justify-self: end;
+    }
 }
 
 /* Visual styling */
@@ -418,6 +422,11 @@ p:has(span.down-arrow) {
     background-color: var(--container-color);
     border: 2px solid var(--container-border-color);
     border-radius: 20px;
+
     padding: 20px;
+
+    & button {
+        width: fit-content;
+    }
 }
 /* ----- End of user data container styling ----- */
