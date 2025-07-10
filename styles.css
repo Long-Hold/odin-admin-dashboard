@@ -19,6 +19,9 @@
     --border-settings: 2px solid var(--border-color);
     --hover-color: rgb(14, 101, 232);
 
+    --container-border-color: rgb(46, 46, 46);
+    --container-border-settings: 2px solid var(var(--container-border-color));
+
     --universal-padding: 25px;
 }
 
@@ -258,7 +261,7 @@ header nav {
 
     > div {
         border-radius: 20px;
-        border: 2px solid rgb(46, 46, 46);
+        border: 2px solid var(--container-border-color);
         padding: 20px;
 
         display: grid;
@@ -383,4 +386,13 @@ p:has(span.down-arrow) {
 
 /* ---- User data summary container styling ---- */
 
+/* Positional styling */
+
+/* Visual styling */
+.user.data-container section {
+    background-color: var(--container-color);
+    border: 2px solid var(--container-border-color);
+    border-radius: 20px;
+    padding: 20px;
+}
 /* ----- End of user data container styling ----- */
