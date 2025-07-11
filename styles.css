@@ -22,6 +22,8 @@
     --container-border-color: rgb(46, 46, 46);
     --container-border-settings: 2px solid var(var(--container-border-color));
 
+    --element-contrasting-gray: rgb(147, 146, 146);
+
     --universal-padding: 25px;
 }
 
@@ -488,8 +490,18 @@ p:has(span.down-arrow) {
     }
 
     & .timestamp {
-        color: rgb(147, 146, 146);
+        color: var(--element-contrasting-gray);
     }
 }
 
+.user.data-container .summary.user-management {
+    & input {
+        width: max(200px, 50%);
+        background-color: rgb(46, 46, 46);
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+}
 /* ----- End of user data container styling ----- */
