@@ -507,6 +507,18 @@ p:has(span.down-arrow) {
     }
 }
 
+/* Table positioning */
+.user.data-container .summary.summary.user-management table {
+    /* Left-aligned columns */
+    /* User, Email, Role columns */
+    & th:first-child, td:first-child,
+    th:nth-child(2), td:nth-child(2),
+    th:nth-child(3), td:nth-child(3) {
+        text-align: left;
+    }
+}
+
+/* Table styling */
 .user.data-container .summary.user-management {
     & input {
         width: max(200px, 50%);
@@ -517,6 +529,7 @@ p:has(span.down-arrow) {
         color: white;
     }
 
+    /* Table body styling */
     & table > tbody > tr {
         border-top: 1px solid var(--border-color);
 
