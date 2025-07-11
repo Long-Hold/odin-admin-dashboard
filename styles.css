@@ -549,5 +549,20 @@ p:has(span.down-arrow) {
             border-bottom: 1px solid var(--border-color);
         }
     }
+
+    & .status {
+        padding: 5px 10px;
+        border-radius: 50px;
+
+        &.active {
+            background-color: rgba(10, 217, 10, 0.285);
+            color: rgb(54, 219, 54);
+        }
+
+        &.inactive {
+            background-color: rgba(255, 0, 0, 0.285);
+            color: rgb(210, 64, 64);
+        }
+    }
 }
 /* ----- End of user data container styling ----- */
