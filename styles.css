@@ -516,6 +516,11 @@ p:has(span.down-arrow) {
     th:nth-child(3), td:nth-child(3) {
         text-align: left;
     }
+
+    /* Status column */
+    & th:nth-child(4), td:nth-child(4) {
+        text-align: center;
+    }
 }
 
 /* Table styling */
