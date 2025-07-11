@@ -423,7 +423,7 @@ p:has(span.down-arrow) {
     }
 }
 
-/* Visual styling */
+/* Visual styling universal styling*/
 .user.data-container section {
     background-color: var(--container-color);
     border: 2px solid var(--container-border-color);
@@ -434,11 +434,15 @@ p:has(span.down-arrow) {
     & button {
         width: fit-content;
     }
+}
 
+/* Specific section styling */
+.user.data-container .summary.recent-activity {
     & ol > li {
         background-color: rgb(46, 46, 46);
         border-radius: 10px;
         padding: 20px;
     }
 }
+
 /* ----- End of user data container styling ----- */
