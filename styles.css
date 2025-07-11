@@ -56,6 +56,16 @@ aside {
     background-color: var(--container-color);
 }
 
+input {
+    box-sizing: border-box;
+    appearance: none;
+}
+
+input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
+  display: none;
+}
+
+
 button {
     padding: 10px 20px;
     cursor: pointer;
