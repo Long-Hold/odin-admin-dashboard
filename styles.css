@@ -421,6 +421,30 @@ p:has(span.down-arrow) {
         flex-flow: column nowrap;
         gap: 10px;
     }
+
+    & ol > li {
+        display: grid;
+        grid-template-columns: 0.1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 20px;
+
+        grid-template-areas: 
+            "icon summary"
+            "icon timestamp";
+    }
+
+    .profile-pic {
+        grid-area: icon;
+        align-self: center;
+    }
+
+    .activity-summary {
+        grid-area: summary;
+    }
+
+    .timestamp {
+        grid-area: timestamp;
+    }
 }
 
 /* Visual styling universal styling*/
