@@ -517,10 +517,12 @@ p:has(span.down-arrow) {
         text-align: left;
     }
 
-    /* Status column */
-    & th:nth-child(4), td:nth-child(4) {
+    /* Status, Actions column */
+    & th:nth-child(4), td:nth-child(4),
+    th:last-child, td:last-child {
         text-align: center;
     }
+
 }
 
 /* Table styling */
