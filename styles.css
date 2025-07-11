@@ -523,6 +523,10 @@ p:has(span.down-arrow) {
         text-align: center;
     }
 
+    /* Last active */
+    & th:nth-last-child(2), td:nth-last-child(2) {
+        text-align: right;
+    }
 }
 
 /* Table styling */
