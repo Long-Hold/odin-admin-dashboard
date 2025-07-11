@@ -482,6 +482,14 @@ p:has(span.down-arrow) {
 
         padding: 30px;
     }
+
+    & .activity-summary {
+        font-size: 1.2rem;
+    }
+
+    & .timestamp {
+        color: rgb(147, 146, 146);
+    }
 }
 
 /* ----- End of user data container styling ----- */
