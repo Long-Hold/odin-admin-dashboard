@@ -511,7 +511,16 @@ p:has(span.down-arrow) {
         border: none;
         border-radius: 10px;
         padding: 10px;
+        color: white;
     }
 
+    & table > tbody > tr {
+        border-top: 1px solid var(--border-color);
+
+        /* Add border to last row as well */
+        & + tr:last-of-type {
+            border-bottom: 1px solid var(--border-color);
+        }
+    }
 }
 /* ----- End of user data container styling ----- */
