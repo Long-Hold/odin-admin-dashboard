@@ -623,6 +623,7 @@ button.toggle-user-management {
     /* Remove the large table that will be replaced by a button */
     .user.data-container .summary.user-management {
         display: none;
+        width: 1500px;
     }
 
     /* Remove welcome message and make header sticky */
