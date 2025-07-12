@@ -111,21 +111,6 @@ body {
     }
 }
 
-/* Media query for re-arranging grid */
-@media screen and (max-width: 1024px) {
-    body {
-        grid-template-columns: 1fr;
-        grid-auto-flow: column;
-        grid-template-areas: 
-        "header header"
-        "numbers numbers"
-        "users users";
-    }
-
-    div.logo-container, aside {
-        display: none;
-    }
-}
 
 header {
     grid-area: header;
@@ -607,3 +592,44 @@ p:has(span.down-arrow) {
     }
 }
 /* ----- End of user data container styling ----- */
+
+/* Media queries for mobile layout */
+.mobile-navs {
+    display: none;
+}
+
+/* Media query for re-arranging grid */
+@media screen and (max-width: 1024px) {
+
+    /* Modify grid to account for removal of navbar */
+    body {
+        grid-template-columns: 1fr;
+        grid-auto-flow: column;
+        grid-template-areas: 
+        "header header"
+        "numbers numbers"
+        "users users";
+    }
+
+    /* Remove navbar and logo */
+    div.logo-container, aside {
+        display: none;
+    }
+
+    /* Remove welcome message and make header sticky */
+    header {
+        position: sticky;
+        top: 0;
+        background-color: var(--container-color);
+        z-index: 1;
+
+        & h1 {
+            display: none;
+        }
+    }
+
+    /* Make the dropdown visible */
+    .mobile-navs {
+        display: block;
+    }
+}
