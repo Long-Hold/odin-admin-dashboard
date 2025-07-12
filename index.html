@@ -32,7 +32,7 @@
 
     <!-- Sidebar to be positioned to the left side of the screen -->
     <aside class="sidebar">
-        <div>
+        <div class="desktop-navs">
             <nav class="pages">
                 <!-- <spans> hold the icons set by CSS classes -->
                 <ul>
@@ -75,6 +75,23 @@
                 </ul>
             </nav>
         </div>
+
+        <nav class="mobile-navs">
+            <select class="mobile-dropdown-menu">
+                <optgroup label="Pages">
+                    <option value="dashboard">Dashboard</option>
+                    <option value="users">Users</option>
+                    <option value="analytics">Analytics</option>
+                    <option value="projects">Projects</option>
+                    <option value="messages">Messages</option>
+                </optgroup>
+                <optgroup label="Settings">
+                    <option value="settings">Settings</option>
+                    <option value="privacy">Privacy</option>
+                    <option value="support">Support</option>
+                </optgroup>
+            </select>
+        </nav>
     </aside>
 
     <!-- Container for graphics like charts, tables -->
