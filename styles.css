@@ -598,6 +598,10 @@ p:has(span.down-arrow) {
     display: none;
 }
 
+button.toggle-user-management {
+    display: none;
+}
+
 /* Media query for re-arranging grid */
 @media screen and (max-width: 1024px) {
 
@@ -634,7 +638,7 @@ p:has(span.down-arrow) {
     }
 
     /* Make the dropdown visible */
-    .mobile-navs {
+    .mobile-navs, button.toggle-user-management {
         display: block;
     }
 
