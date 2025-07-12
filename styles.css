@@ -114,6 +114,8 @@ body {
 /* Media query for re-arranging grid */
 @media screen and (max-width: 1024px) {
     body {
+        grid-template-columns: 1fr;
+        grid-auto-flow: column;
         grid-template-areas: 
         "header header"
         "numbers numbers"
