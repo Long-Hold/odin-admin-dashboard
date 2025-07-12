@@ -565,5 +565,15 @@ p:has(span.down-arrow) {
             color: rgb(210, 64, 64);
         }
     }
+
+    & .icon-skeleton {
+        display: inline-block;
+        width: 3em;
+        height: 3em;
+        background-color: var(--border-color);
+        border-radius: 100px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
 }
 /* ----- End of user data container styling ----- */
