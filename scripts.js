@@ -98,8 +98,18 @@ function createTrafficPieChart() {
 
 function toggleManagementTable() {
     const toggle = document.querySelector('.toggle-user-management');
+    const managementTable = document.querySelector('.user-management');
+
+    let visible = false;
     toggle.addEventListener('click', (e) => {
-        alert("Hello");
+        if (visible) {
+            managementTable.style.display = 'none';
+        }
+        else {
+            managementTable.style.display = 'block';
+        }
+
+        visible = !visible;
     } )
 }
 
