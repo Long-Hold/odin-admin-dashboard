@@ -111,6 +111,20 @@ body {
     }
 }
 
+/* Media query for re-arranging grid */
+@media screen and (max-width: 1024px) {
+    body {
+        grid-template-areas: 
+        "header header"
+        "numbers numbers"
+        "users users";
+    }
+
+    div.logo-container, aside {
+        display: none;
+    }
+}
+
 header {
     grid-area: header;
     border-bottom: var(--border-settings);
