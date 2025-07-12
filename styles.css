@@ -616,6 +616,11 @@ p:has(span.down-arrow) {
         display: none;
     }
 
+    /* Remove the large table that will be replaced by a button */
+    .user.data-container .summary.user-management {
+        display: none;
+    }
+
     /* Remove welcome message and make header sticky */
     header {
         position: sticky;
