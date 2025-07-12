@@ -96,5 +96,9 @@ function createTrafficPieChart() {
     })
 }
 
+function toggleMobileDropDown() {
+    
+}
+
 createRevenueChart();
 createTrafficPieChart();
