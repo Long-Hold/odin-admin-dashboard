@@ -144,14 +144,18 @@ header {
 }
 
 .sidebar {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 50px;
-
     padding-left: 25px;
     padding-top: 25px;
 
     border-right: var(--border-settings);
+
+    & div {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 50px;
+        position: sticky;
+        top: 10px;
+    }
 }
 
 .sidebar nav ul {
