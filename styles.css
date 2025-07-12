@@ -632,4 +632,26 @@ p:has(span.down-arrow) {
     .mobile-navs {
         display: block;
     }
+
+    /* Dropdown styling */
+    select,
+    ::picker(select) {
+        appearance: base-select;
+    }
+
+    select {
+        padding: 10px;
+        background-color: var(--container-border-color);
+        transition: 0.4s;
+        border: 1px solid var(--border-color);
+    }
+
+    select::picker-icon {
+        color: rgb(102, 0, 255);
+        transition: 0.4s rotate;
+    }
+
+    select:open::picker-icon {
+        rotate: 180deg;
+    }
 }
