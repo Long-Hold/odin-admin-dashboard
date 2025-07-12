@@ -96,9 +96,13 @@ function createTrafficPieChart() {
     })
 }
 
-function toggleMobileDropDown() {
-    
+function toggleManagementTable() {
+    const toggle = document.querySelector('.toggle-user-management');
+    toggle.addEventListener('click', (e) => {
+        alert("Hello");
+    } )
 }
 
 createRevenueChart();
 createTrafficPieChart();
+toggleManagementTable();
