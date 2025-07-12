@@ -1,49 +1,5 @@
 /* Custom font files */
 @font-face {
-    font-family: 'fira_sansbold';
-    src: url('fonts/firasans-bold-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'fira_sansitalic';
-    src: url('fonts/firasans-italic-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'fira_sanslight';
-    src: url('fonts/firasans-light-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'fira_sansmedium';
-    src: url('fonts/firasans-medium-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
     font-family: 'fira_sansregular';
     src: url('fonts/firasans-regular-webfont.woff2') format('woff2');
     font-weight: normal;
