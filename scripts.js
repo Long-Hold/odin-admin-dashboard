@@ -104,6 +104,7 @@ function toggleManagementTable() {
     toggle.addEventListener('click', (e) => {
         if (visible) {
             managementTable.style.display = 'none';
+            location.reload();
         }
         else {
             managementTable.style.display = 'block';
